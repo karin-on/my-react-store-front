@@ -1,6 +1,7 @@
 {
   "name": "my-react-store-front",
   "version": "0.1.0",
+  "homepage": "https://karin-on.github.io/my-react-store-front",
   "private": true,
   "dependencies": {
     "@babel/core": "7.5.5",
@@ -28,6 +29,7 @@
     "file-loader": "3.0.1",
     "firebase": "^6.4.0",
     "fs-extra": "7.0.1",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
     "is-wsl": "^1.1.0",
@@ -69,6 +71,8 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
