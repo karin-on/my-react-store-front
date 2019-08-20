@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from './actions/cart';
-import './App.css';
+import classes from './App.scss';
 
 
 function App(props) {
@@ -9,7 +9,12 @@ function App(props) {
 
   return (
     <div className="App">
-      <button onClick={() => dispatch(addToCart('coś', 3))}>add to cart</button>
+      <button
+          className={classes.Button}
+          onClick={() => dispatch(addToCart('coś', 3))}
+      >
+        add to cart
+      </button>
 
       { JSON.stringify(order) }
     </div>

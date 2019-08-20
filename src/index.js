@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import cart from './reducers/cart';
 import './index.css';
 import App from './App';
+import Button from './components/Button/Button';
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(
@@ -16,6 +17,7 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
         <App />
+        <Button />
     </Provider>,
     document.getElementById('root'));
 
