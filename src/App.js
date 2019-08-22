@@ -1,31 +1,33 @@
 import React from 'react';
 import { connect } from 'react-redux';
+// eslint-disable-next-line
 import { addToCart } from './actions/cart';
-import classes from './App.scss';
 
+import { Layout } from './components/Layout/Layout';
+import { Home } from './components/Home/Home';
 
 function App(props) {
-  const { dispatch, order } = props;
+    // eslint-disable-next-line
+    const {dispatch, order} = props;
+    return (
+        <>
+            <Layout>
+                <Home />
+            </Layout>
 
-  return (
-    <div className="App">
-      <button
-          className={classes.Button}
-          onClick={() => dispatch(addToCart('coś', 3))}
-      >
-        add to cart
-      </button>
-
-      { JSON.stringify(order) }
-    </div>
-  );
+            {/*<button onClick={() => dispatch(addToCart('coś', 3))}>*/}
+            {/*add to cart*/}
+            {/*</button>*/}
+            {/*{JSON.stringify(order)}*/}
+        </>
+    );
 }
 
 const mapStateToProps = (state) => {
-  const { order } = state;
-  return { order };
+    const { order } = state;
+    return { order };
 };
 
 export default connect(
-    mapStateToProps
+    mapStateToProps,
 )(App);

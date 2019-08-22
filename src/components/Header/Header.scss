@@ -1,0 +1,41 @@
+@import "../../sass/abstracts/variables";
+
+.Header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: $color-blue-logo;
+    font-weight: 600;
+}
+
+.Icon {
+    color: $color-gray-icon;
+
+    &:first-child {
+        margin-right: 18px;
+    }
+
+    &:nth-child(2) {
+        margin-right: auto;
+    }
+
+    &:nth-child(4) {
+        margin-left: auto;
+    }
+
+    &:last-child {
+        margin-left: 15px;
+    }
+}

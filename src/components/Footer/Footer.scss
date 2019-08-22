@@ -1,0 +1,10 @@
+@import "../../sass/abstracts/variables";
+
+.Footer {
+    font-family: 'Dosis', sans-serif;
+    height: 46px;
+    background-color: $color-gray-bg;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}

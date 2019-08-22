@@ -1,0 +1,13 @@
+.Home {
+    min-height: 650px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: 205px minmax(350px, auto);
+    grid-auto-columns: 1fr;
+}
+
+@media (min-height: 601px) {
+    .Home {
+        height: calc(100vh - 50px);
+    }
+}

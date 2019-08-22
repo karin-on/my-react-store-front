@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { ADD_TO_CART } from '../constants/cart';
 
 const defaultState = {

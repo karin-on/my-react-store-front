@@ -1,0 +1,57 @@
+@import "../../sass/abstracts/variables";
+
+.Taxonomies {
+    padding: 13px 0;
+    display: flex;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.TaxContainer {
+    display: flex;
+}
+
+.TaxonomiesInner {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.Taxonomy {
+    background-color: $color-gray-bg;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.Women {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.TaxonomyTitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (min-width: 1601px) {
+    .Container {
+        padding: 0;
+    }
+}
+
+@media (min-width: 651px) {
+    .Container {
+        padding: 0 30px;
+    }
+}
