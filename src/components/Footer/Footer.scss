@@ -4,7 +4,29 @@
     font-family: 'Dosis', sans-serif;
     height: 46px;
     background-color: $color-gray-bg;
-    padding: 0 20px;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.FooterContainer {
+    height: 100%;
     display: flex;
     align-items: center;
+}
+
+@media (min-width: 651px) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .Container {
+        padding: 0;
+    }
 }

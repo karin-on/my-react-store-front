@@ -7,6 +7,16 @@
     left: 0;
     background-color: white;
     height: 50px;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.HeaderContainer {
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
@@ -37,5 +47,17 @@
 
     &:last-child {
         margin-left: 15px;
+    }
+}
+
+@media (min-width: 651px) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .Container {
+        padding: 0;
     }
 }

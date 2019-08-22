@@ -5,24 +5,30 @@ import React from 'react';
 // import '../../../node_modules/font-awesome/scss/font-awesome.scss';
 import classes from './Header.scss';
 
-const Header = () => (
-    <header className={classes.Header}>
-        <span className={classes.Icon}>
-            <i className="fa fa-bars fa-lg" aria-hidden="true" />
-        </span>
-        <span className={classes.Icon}>
-            <i className="fa fa-search fa-lg" aria-hidden="true" />
-        </span>
+const Header = () => {
+    const containerClasses = [classes.Container, classes.HeaderContainer];
 
-        <h1 className={classes.Logo}>nologo</h1>
+    return (
+        <header className={classes.Header}>
+            <div className={containerClasses.join(' ')}>
+                <span className={classes.Icon}>
+                    <i className="fa fa-bars fa-lg" aria-hidden="true" />
+                </span>
+                <span className={classes.Icon}>
+                    <i className="fa fa-search fa-lg" aria-hidden="true" />
+                </span>
 
-        <span className={classes.Icon}>
-            <i className="fa fa-user-o fa-lg" aria-hidden="true" />
-        </span>
-        <span className={classes.Icon}>
-            <i className="fa fa-shopping-bag fa-lg" aria-hidden="true" />
-        </span>
-    </header>
-);
+                <h1 className={classes.Logo}>nologo</h1>
+
+                <span className={classes.Icon}>
+                    <i className="fa fa-user-o fa-lg" aria-hidden="true" />
+                </span>
+                <span className={classes.Icon}>
+                    <i className="fa fa-shopping-bag fa-lg" aria-hidden="true" />
+                </span>
+            </div>
+        </header>
+    );
+};
 
 export { Header };
