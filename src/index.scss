@@ -1,18 +1,18 @@
 //$fa-font-path: "~font-awesome/fonts";
 //@import '~font-awesome/scss/font-awesome.scss';
-@import "sass/abstracts/variables";
-@import "sass/abstracts/fonts";
+@import "styles/abstracts/variables";
+@import "styles/abstracts/fonts";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: $color-white;
-  color: $color-gray-font;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: $color-white;
+    color: $color-gray-font;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

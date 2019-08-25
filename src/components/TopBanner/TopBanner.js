@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './TopBanner.scss';
 
 const TopBanner = () => (
@@ -8,9 +9,9 @@ const TopBanner = () => (
             <br />
             Collection
         </h2>
-        <button type="button" className={classes.Button}>
+        <Link to="/products" className={classes.Button}>
             Shop Now
-        </button>
+        </Link>
     </section>
 );
 

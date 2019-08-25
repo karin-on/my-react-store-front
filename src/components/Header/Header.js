@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // import 'font-awesome/scss/font-awesome.scss';
 // import '../node_modules/font-awesome/css/font-awesome.min.css';
 // import '../../../node_modules/font-awesome/scss/font-awesome.scss';
@@ -18,7 +19,11 @@ const Header = () => {
                     <i className="fa fa-search fa-lg" aria-hidden="true" />
                 </span>
 
-                <h1 className={classes.Logo}>nologo</h1>
+                <h1 className={classes.Logo}>
+                    <Link to="/" className={classes.LogoLink}>
+                        nologo
+                    </Link>
+                </h1>
 
                 <span className={classes.Icon}>
                     <i className="fa fa-user-o fa-lg" aria-hidden="true" />

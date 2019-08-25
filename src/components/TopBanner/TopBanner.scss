@@ -1,5 +1,5 @@
-@import "../../sass/abstracts/mixins";
-@import "../../sass/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
 
 .ImageHolder {
     @include image-holder(375, 205);
@@ -24,12 +24,12 @@
 .Button {
     width: 130px;
     height: 30px;
+    border: none;
     background-color: $color-gray-icon;
     color: $color-white;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    line-height: 30px;
+    text-decoration: none;
 }

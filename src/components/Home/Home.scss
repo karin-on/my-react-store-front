@@ -1,9 +1,9 @@
 .Home {
-    min-height: 650px;
-    padding-top: 50px;
     display: grid;
     grid-template-rows: 205px minmax(350px, auto);
     grid-auto-columns: 1fr;
+    min-height: 650px;
+    padding-top: 50px;
 }
 
 @media (min-height: 601px) {
