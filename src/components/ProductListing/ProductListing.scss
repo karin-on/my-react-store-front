@@ -7,3 +7,15 @@
     margin: 0 auto;
     padding: 0 18px;
 }
+
+@media (min-width: 651px) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .Container {
+        padding: 0;
+    }
+}

@@ -12,12 +12,12 @@ const Header = () => {
     return (
         <header className={classes.Header}>
             <div className={containerClasses.join(' ')}>
-                <span className={classes.Icon}>
+                <button className={classes.Button} type="button">
                     <i className="fa fa-bars fa-lg" aria-hidden="true" />
-                </span>
-                <span className={classes.Icon}>
+                </button>
+                <button className={classes.Button} type="button">
                     <i className="fa fa-search fa-lg" aria-hidden="true" />
-                </span>
+                </button>
 
                 <h1 className={classes.Logo}>
                     <Link to="/" className={classes.LogoLink}>
@@ -25,12 +25,12 @@ const Header = () => {
                     </Link>
                 </h1>
 
-                <span className={classes.Icon}>
+                <button className={classes.Button} type="button">
                     <i className="fa fa-user-o fa-lg" aria-hidden="true" />
-                </span>
-                <span className={classes.Icon}>
+                </button>
+                <button className={classes.Button} type="button">
                     <i className="fa fa-shopping-bag fa-lg" aria-hidden="true" />
-                </span>
+                </button>
             </div>
         </header>
     );
