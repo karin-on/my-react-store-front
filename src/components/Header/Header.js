@@ -1,9 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import 'font-awesome/scss/font-awesome.scss';
-// import '../node_modules/font-awesome/css/font-awesome.min.css';
-// import '../../../node_modules/font-awesome/scss/font-awesome.scss';
-// import '../../../node_modules/font-awesome/scss/font-awesome.scss';
 import classes from './Header.scss';
 
 const Header = () => {
