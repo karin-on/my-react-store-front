@@ -12,7 +12,7 @@ function App(props) {
     // eslint-disable-next-line
     const {dispatch, order} = props;
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/my-react-store-front">
             <>
                 <Layout>
                     <Route exact path="/" component={Home} />

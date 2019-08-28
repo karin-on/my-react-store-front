@@ -1,8 +1,8 @@
 @import "../../styles/abstracts/variables";
 
-.Breadcrumps {
+.Breadcrumbs {
     padding: 12px 0;
-    color: $color-gray-breadcrumps-font;
+    color: $color-gray-breadcrumbs-font;
     font-size: 10px;
 }
 
@@ -12,10 +12,10 @@
     text-decoration: none;
 
     &:hover {
-        color: $color-gray-breadcrumps-hover-font;
+        color: $color-gray-breadcrumbs-hover-font;
     }
 }
 
-.Breadcrumps i {
+.Breadcrumbs i {
     margin-right: 8px;
 }

@@ -1,13 +1,16 @@
+@import "../../styles/abstracts/breakpoints";
+
 .Home {
     display: grid;
-    grid-template-rows: 205px minmax(350px, auto);
+    grid-template-rows: 205px auto;
+    //grid-template-rows: auto auto;
     grid-auto-columns: 1fr;
-    min-height: 650px;
+    //min-height: 650px;
     padding-top: 50px;
 }
 
-@media (min-height: 601px) {
+@include heightBreakpoint($highMobile) {
     .Home {
-        height: calc(100vh - 50px);
+        //height: calc(100vh - 50px);
     }
 }

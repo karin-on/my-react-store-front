@@ -1,4 +1,5 @@
 @import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/breakpoints";
 
 .Header {
     position: fixed;
@@ -7,7 +8,8 @@
     width: 100%;
     height: 50px;
     border-bottom: 1px solid $color-gray-bg;
-    background-color: white;
+    background-color: $color-white;
+    z-index: 9;
 }
 
 .Container {
@@ -35,10 +37,6 @@
     padding: 10px 15px;
     color: inherit;
     text-decoration: none;
-
-    &:focus {
-        outline: none;
-    }
 }
 
 .Button {
@@ -46,36 +44,35 @@
     border: none;
     color: $color-gray-icon;
     background: transparent;
-    outline: none;
-
-    &:first-child {
-        padding-right: 15px;
-        margin-right: 3px;
-    }
-
-    &:nth-child(2) {
-        padding-right: 15px;
-        margin-right: auto;
-    }
-
-    &:nth-child(4) {
-        padding-left: 15px;
-        margin-left: auto;
-    }
-
-    &:last-child {
-        padding-left: 12px;
-        margin-left: 3px;
-    }
 }
 
-@media (min-width: 651px) {
+.NavButton {
+    padding-right: 15px;
+    margin-right: 3px;
+}
+
+.SearchButton {
+    padding-right: 15px;
+    margin-right: auto;
+}
+
+.UserButton {
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+.CartButton {
+    padding-left: 12px;
+    margin-left: 3px;
+}
+
+@include breakpoint($laptop) {
     .Container {
         padding: 0 30px;
     }
 }
 
-@media (min-width: 1601px) {
+@include breakpoint($largeDesktop) {
     .Container {
         padding: 0;
     }
