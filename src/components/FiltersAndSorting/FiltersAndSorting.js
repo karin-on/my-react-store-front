@@ -4,12 +4,11 @@ import classes from './FiltersAndSorting.scss';
 
 const FiltersAndSorting = () => {
     const slidersIconClasses = classNames(
-        'fa fa-sliders fa-lg',
+        'fa', 'fa-sliders', 'fa-lg',
         classes.SlidersIcon,
     );
-
     const angleIconClasses = classNames(
-        'fa fa-angle-down fa-lg',
+        'fa', 'fa-angle-down', 'fa-lg',
         classes.AngleIcon,
     );
 

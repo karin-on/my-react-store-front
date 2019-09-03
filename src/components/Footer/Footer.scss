@@ -2,9 +2,13 @@
 @import "../../styles/abstracts/breakpoints";
 
 .Footer {
-    font-family: 'Dosis', sans-serif;
-    height: 46px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
     background-color: $color-gray-bg;
+    font-family: $font-dosis;
 }
 
 .Container {

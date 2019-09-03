@@ -10,7 +10,7 @@
 body {
     background-color: $color-white;
     color: $color-gray-font;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-main;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

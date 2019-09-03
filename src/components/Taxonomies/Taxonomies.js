@@ -11,7 +11,6 @@ const Taxonomies = () => {
         classes.Taxonomy,
         classes.MenAndKids,
     );
-
     const containerClasses = classNames(
         classes.Container,
         classes.TaxContainer,
