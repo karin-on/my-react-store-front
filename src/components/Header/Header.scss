@@ -1,0 +1,79 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/breakpoints";
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $header-height;
+    border-bottom: 1px solid $color-gray-bg;
+    background-color: $color-white;
+    z-index: 9;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.Logo {
+    color: $color-blue-logo;
+    font-family: $font-dosis;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.LogoLink {
+    padding: 10px 15px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.Button {
+    padding: 12px 0;
+    border: none;
+    color: $color-gray-icon;
+    background: transparent;
+}
+
+.NavButton {
+    padding-right: 15px;
+    margin-right: 3px;
+}
+
+.SearchButton {
+    padding-right: 15px;
+    margin-right: auto;
+}
+
+.UserButton {
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+.CartButton {
+    padding-left: 12px;
+    margin-left: 3px;
+}
+
+@include breakpoint($laptop) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        padding: 0;
+    }
+}

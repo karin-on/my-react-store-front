@@ -1,0 +1,37 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/breakpoints";
+
+.Footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    background-color: $color-gray-bg;
+    font-family: $font-dosis;
+}
+
+.Container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.FooterContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@include breakpoint($laptop) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        padding: 0;
+    }
+}

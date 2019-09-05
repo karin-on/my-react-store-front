@@ -1,0 +1,21 @@
+@import "../../styles/abstracts/variables";
+
+.Breadcrumbs {
+    padding: 12px 0;
+    color: $color-gray-breadcrumbs-font;
+    font-size: 10px;
+}
+
+.Link {
+    margin-right: 8px;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-gray-breadcrumbs-hover-font;
+    }
+}
+
+.Breadcrumbs i {
+    margin-right: 8px;
+}

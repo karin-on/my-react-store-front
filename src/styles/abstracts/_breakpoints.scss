@@ -1,0 +1,27 @@
+// widths
+$laptop: laptop;
+$desktop: desktop;
+$largeDesktop: largeDesktop;
+
+// heights
+$highMobile: highMobile;
+
+@mixin breakpoint($point) {
+    @if $point == laptop {
+        @media (min-width: 651px) { @content ; }
+    }
+
+    @else if $point == desktop {
+        @media (min-width: 1051px) { @content ; }
+    }
+
+    @else if $point == largeDesktop {
+        @media (min-width: 1601px) { @content ; }
+    }
+}
+
+@mixin heightBreakpoint($point) {
+    @if $point == highMobile {
+        @media (min-height: 601px) { @content ; }
+    }
+}

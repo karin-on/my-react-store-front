@@ -1,0 +1,10 @@
+@import "../../styles/abstracts/variables";
+
+.PageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.ContentWrapper {
+    padding: $header-height 0 $footer-height;
+}

@@ -1,0 +1,23 @@
+.FiltersAndSorting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Button {
+    display: inline-block;
+    height: 30px;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.SlidersIcon {
+    margin-right: 12px;
+}
+
+.AngleIcon {
+    margin-left: 10px;
+}
