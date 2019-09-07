@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import classes from './Breadcrumps.scss';
+import classes from './Breadcrumbs.scss';
 
-const Breadcrumps = () => (
-    <div className={classes.Breadcrumps}>
+const Breadcrumbs = () => (
+    <div className={classes.Breadcrumbs}>
         <Link to="/" className={classes.Link}>Home</Link>
         <i className="fa fa-angle-right" aria-hidden="true" />
         <span>T-shirts</span>
     </div>
 );
 
-export { Breadcrumps };
+export { Breadcrumbs };

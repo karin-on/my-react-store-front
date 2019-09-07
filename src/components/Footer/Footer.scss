@@ -1,9 +1,14 @@
 @import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/breakpoints";
 
 .Footer {
-    font-family: 'Dosis', sans-serif;
-    height: 46px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
     background-color: $color-gray-bg;
+    font-family: $font-dosis;
 }
 
 .Container {
@@ -19,13 +24,13 @@
     align-items: center;
 }
 
-@media (min-width: 651px) {
+@include breakpoint($laptop) {
     .Container {
         padding: 0 30px;
     }
 }
 
-@media (min-width: 1601px) {
+@include breakpoint($largeDesktop) {
     .Container {
         padding: 0;
     }

@@ -1,5 +1,5 @@
 @mixin image-holder($width, $height) {
-  position: relative;
-  height: 0;
-  padding-bottom: ($height / $width) * 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: ($height / $width) * 100%;
 }

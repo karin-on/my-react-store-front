@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './ProductListing.scss';
 
-import { Breadcrumps } from '../Breadcrumps/Breadcrumps';
+import { Breadcrumbs } from '../Breadcrumbs/Breadcrumbs';
 import { PageHeader } from '../PageHeader/PageHeader';
 import { FiltersAndSorting } from '../FiltersAndSorting/FiltersAndSorting';
 import { ListingBody } from './ListingBody/ListingBody';
@@ -9,7 +9,7 @@ import { ListingBody } from './ListingBody/ListingBody';
 const ProductListing = () => (
     <main className={classes.Listing}>
         <div className={classes.Container}>
-            <Breadcrumps />
+            <Breadcrumbs />
             <PageHeader />
             <FiltersAndSorting />
             <ListingBody />
