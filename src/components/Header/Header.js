@@ -43,7 +43,7 @@ const Header = () => {
                 </h1>
 
                 <button className={userBtnClasses} type="button">
-                    <i className="fa fa-user-o fa-lg" aria-hidden="true" />
+                    <i className="far fa-user fa-lg" aria-hidden="true" />
                 </button>
                 <button className={cartBtnClasses} type="button">
                     <i className="fa fa-shopping-bag fa-lg" aria-hidden="true" />

@@ -1,16 +1,49 @@
+@import "../../../styles/abstracts/mixins";
 @import "../../../styles/abstracts/variables";
 
 .ProductsContainer {
+    margin-bottom: 30px;
+}
+
+.ProductsList {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    margin-bottom: 30px;
     list-style: none;
 }
 
 .Product {
-    min-height: 150px;
+    position: relative;
+}
+
+.AddToFavIcon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.ProductImageHolder {
+    @include image-holder(165, 205);
+
     background-color: $color-gray-bg;
+}
+
+.ProductInfo {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.ProductName {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.ProductPrice {
+    display: block;
+    font-weight: 600;
 }
 
 .LoadMoreBtn {
@@ -22,4 +55,8 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.LoadMoreContainer {
+    margin-bottom: 40px;
 }
