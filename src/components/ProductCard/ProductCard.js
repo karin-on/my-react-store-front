@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './ProductCard.scss';
 
 const ProductCard = () => (
-    <li className={classes.Product}>
+    <div className={classes.Product}>
         <span className={classes.AddToFavIcon}>
             <i className="far fa-heart" />
         </span>
@@ -14,7 +14,7 @@ const ProductCard = () => (
                 <span>39.99</span>
             </span>
         </div>
-    </li>
+    </div>
 );
 
 export { ProductCard };
