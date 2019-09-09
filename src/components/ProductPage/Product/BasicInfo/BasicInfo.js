@@ -3,8 +3,8 @@ import classes from './BasicInfo.scss';
 
 const BasicInfo = () => (
     <div className={classes.BasicInfo}>
-        <span className={classes.Name}>Basic t-shirt</span>
-        <span className={classes.Subtitle}>Subtitle</span>
+        <h2 className={classes.Name}>Basic t-shirt</h2>
+        <h3 className={classes.Subtitle}>Subtitle</h3>
         <span className={classes.Price}>
             <span>$</span>
             <span>39.99</span>

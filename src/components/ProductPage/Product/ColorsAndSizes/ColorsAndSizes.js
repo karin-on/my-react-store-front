@@ -20,10 +20,10 @@ const ColorsAndSizes = () => {
     return (
         <div className={classes.ColorsAndSizes}>
             <div className={classes.ColorsAndSizesPart}>
-                <div className={classes.ColorsAndSizesHeader}>
+                <h4 className={classes.ColorsAndSizesHeader}>
                     <span>Color:</span>
                     <span className={classes.ChosenValue}>Pink</span>
-                </div>
+                </h4>
                 <div>
                     <button className={colorIconClassesWhite} type="button" aria-label="White" />
                     <button className={colorIconClassesBlack} type="button" aria-label="Black" />
@@ -32,10 +32,10 @@ const ColorsAndSizes = () => {
                 </div>
             </div>
             <div className={classes.ColorsAndSizesPart}>
-                <div className={classes.ColorsAndSizesHeader}>
+                <h4 className={classes.ColorsAndSizesHeader}>
                     <span>Size:</span>
                     <span className={classes.ChosenValue}>XS</span>
-                </div>
+                </h4>
                 <div>
                     <button className={sizeIconClasses} type="button">XS</button>
                     <button className={classes.SizeIcon} type="button">S</button>
