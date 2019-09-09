@@ -1,0 +1,13 @@
+@import "../../../styles/abstracts/mixins";
+@import "../../../styles/abstracts/variables";
+
+.ImagesContainer {
+    width: calc(100% + 2 * 18px);
+    margin-left: -18px;
+}
+
+.ImageHolder {
+    @include image-holder(375, 405);
+
+    background-color: $color-gray-bg;
+}

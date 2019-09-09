@@ -1,0 +1,90 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/regular";
+}
+
+@import "../../../../styles/abstracts/variables";
+
+.AddToCart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0 25px;
+    border-bottom: 1px solid $color-gray-bg;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.SizeAndDelivery {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 10px;
+}
+
+.SizeInfoLink {
+    margin-right: 47px;
+}
+
+.SizeInfoLink,
+.DeliveryInfoLink {
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $color-black;
+    }
+}
+
+.QuantityControls {
+    border: 1px solid $color-gray-icon-border;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.LessBtn,
+.MoreBtn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+
+.Quantity {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.AddToWishlistBtn {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: none;
+    margin-bottom: 20px;
+    background: transparent;
+    text-align: left;
+    text-transform: inherit;
+}
+
+.heartIcon {
+    margin-right: 7%;
+}
+
+.AddToCartBtn {
+    width: 100%;
+    height: 36px;
+    border: none;
+    background: $color-gray-btn-bg;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

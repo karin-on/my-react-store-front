@@ -1,7 +1,4 @@
-:global {
-    @import "@fortawesome/fontawesome-free/scss/fontawesome";
-    @import "@fortawesome/fontawesome-free/scss/solid";
-}
+@import "../../styles/abstracts/variables";
 
 .FiltersAndSorting {
     display: flex;
@@ -21,8 +18,10 @@
 
 .SlidersIcon {
     margin-right: 12px;
+    color: $color-gray-icon;
 }
 
 .AngleIcon {
     margin-left: 10px;
+    color: $color-gray-icon;
 }

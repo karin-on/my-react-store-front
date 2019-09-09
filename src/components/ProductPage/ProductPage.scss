@@ -1,0 +1,19 @@
+@import "../../styles/abstracts/breakpoints";
+
+.Container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+@include breakpoint($laptop) {
+    .Container {
+        padding: 0 30px;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        padding: 0;
+    }
+}
