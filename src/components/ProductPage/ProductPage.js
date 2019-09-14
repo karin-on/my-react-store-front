@@ -6,13 +6,11 @@ import { Product } from './Product/Product';
 import { RecommendedProducts } from '../RecommendedProducts/RecommendedProducts';
 
 const ProductPage = () => (
-    <main>
-        <div className={classes.Container}>
-            <Breadcrumbs />
-            <Product />
-            <RecommendedProducts />
-        </div>
-    </main>
+    <div className={classes.Container}>
+        <Breadcrumbs />
+        <Product />
+        <RecommendedProducts />
+    </div>
 );
 
 export { ProductPage };

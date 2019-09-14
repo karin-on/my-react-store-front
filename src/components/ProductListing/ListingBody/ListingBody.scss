@@ -1,3 +1,8 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/regular";
+}
+
 @import "../../../styles/abstracts/mixins";
 @import "../../../styles/abstracts/variables";
 
@@ -10,10 +15,6 @@
     grid-gap: 8px;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     list-style: none;
-}
-
-.Product {
-    position: relative;
 }
 
 .AddToFavIcon {

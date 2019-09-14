@@ -1,3 +1,8 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/regular";
+}
+
 @import "../../styles/abstracts/mixins";
 @import "../../styles/abstracts/variables";
 
@@ -19,15 +24,27 @@
     background-color: $color-gray-bg;
 }
 
-.ProductInfo {
+.ProductInfo--ProdList {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.ProductInfo--ProdPage {
     padding: 6px 0;
     font-size: 11px;
 }
 
 .ProductName {
     display: block;
-    margin-bottom: 1px;
     font-weight: 500;
+}
+
+.ProductName--ProdList {
+    margin-bottom: 3px;
+}
+
+.ProductName--ProdPage {
+    margin-bottom: 1px;
 }
 
 .ProductPrice {

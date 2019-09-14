@@ -1,3 +1,8 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/regular";
+}
+
 @import "../../styles/abstracts/variables";
 
 .Breadcrumbs {
