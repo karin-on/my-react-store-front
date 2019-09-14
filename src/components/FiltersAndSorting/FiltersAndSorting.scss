@@ -1,3 +1,8 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/solid";
+}
+
 .FiltersAndSorting {
     display: flex;
     justify-content: space-between;

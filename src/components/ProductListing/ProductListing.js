@@ -7,14 +7,14 @@ import { FiltersAndSorting } from '../FiltersAndSorting/FiltersAndSorting';
 import { ListingBody } from './ListingBody/ListingBody';
 
 const ProductListing = () => (
-    <main className={classes.Listing}>
+    <section>
         <div className={classes.Container}>
             <Breadcrumbs />
             <PageHeader />
             <FiltersAndSorting />
             <ListingBody />
         </div>
-    </main>
+    </section>
 );
 
 export { ProductListing };
