@@ -7,7 +7,7 @@ import { FiltersAndSorting } from '../FiltersAndSorting/FiltersAndSorting';
 import { ListingBody } from './ListingBody/ListingBody';
 
 const ProductListing = () => (
-    <section className={classes.Listing}>
+    <section>
         <div className={classes.Container}>
             <Breadcrumbs />
             <PageHeader />
