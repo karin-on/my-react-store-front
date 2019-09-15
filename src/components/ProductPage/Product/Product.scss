@@ -1,13 +1,41 @@
+@import "../../../styles/abstracts/breakpoints";
 @import "../../../styles/abstracts/mixins";
 @import "../../../styles/abstracts/variables";
 
-.ImagesContainer {
-    width: calc(100% + 2 * 18px);
-    margin-left: -18px;
+.Container {
+    @include container;
 }
 
-.ImageHolder {
-    @include image-holder(375, 405);
+.ProdContainer {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
 
-    background-color: $color-gray-bg;
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+
+    .ProdContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: $product-gridGap-largeTablet;
+    }
+}
+
+@include breakpoint($desktop) {
+    .ProdContainer {
+        grid-template-columns: 465px auto;
+        grid-column-gap: 40px;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
+
+    .ProdContainer {
+        grid-template-columns: 600px auto;
+    }
 }

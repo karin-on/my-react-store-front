@@ -3,12 +3,13 @@
     @import "@fortawesome/fontawesome-free/scss/regular";
 }
 
+@import "../../../../styles/abstracts/breakpoints";
 @import "../../../../styles/abstracts/variables";
 
 .AddToCart {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 122px auto;
     padding: 15px 0 25px;
     border-bottom: 1px solid $color-gray-bg;
     font-size: 11px;
@@ -17,7 +18,7 @@
 }
 
 .SizeAndDelivery {
-    width: 100%;
+    grid-column: 1 / -1;
     margin-bottom: 24px;
     font-size: 10px;
 }
@@ -40,6 +41,7 @@
 }
 
 .QuantityControls {
+    align-self: self-start;
     border: 1px solid $color-gray-icon-border;
     margin-bottom: 20px;
     font-size: 15px;
@@ -63,9 +65,9 @@
 }
 
 .AddToWishlistBtn {
+    justify-self: self-end;
     display: flex;
     align-items: center;
-    width: 40%;
     height: 40px;
     border: none;
     margin-bottom: 20px;
@@ -74,12 +76,12 @@
     text-transform: inherit;
 }
 
-.heartIcon {
-    margin-right: 7%;
+.HeartIcon {
+    margin-right: 7px;
 }
 
 .AddToCartBtn {
-    width: 100%;
+    grid-column: 1 / -1;
     height: 36px;
     border: none;
     background: $color-gray-btn-bg;
@@ -87,4 +89,40 @@
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+@include breakpoint($largeMobile) {
+    .AddToWishlistBtn {
+        justify-self: self-start;
+        margin-left: 35px;
+    }
+}
+
+@include breakpoint($tablet) {
+    .AddToCart {
+        grid-column: 1 / -1;
+    }
+
+    .AddToCartBtn {
+        justify-self: center;
+        width: 400px;
+    }
+}
+
+@include breakpoint($largeTablet) {
+    .AddToCartBtn {
+        justify-self: self-start;
+        width: calc(50% - 0.5 * #{$product-gridGap-largeTablet});
+    }
+}
+
+@include breakpoint($desktop) {
+    .AddToCart {
+        grid-column: 2 / -1;
+    }
+
+    .AddToCartBtn {
+        width: 100%;
+        max-width: 400px;
+    }
 }

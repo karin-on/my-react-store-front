@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import classes from './ProductCard.scss';
 
-const ProductCard = ({ page }) => (
+const ProductCard = ({ subclass }) => (
     <div className={classes.Product}>
         <span className={classes.AddToFavIcon}>
             <i className="far fa-heart" />
         </span>
         <div className={classes.ProductImageHolder} />
-        <div className={classNames(classes[`ProductInfo--${page}`])}>
+        <div className={classNames(classes[`ProductInfo--${subclass}`])}>
             <span className={classNames(
                 classes.ProductName,
-                classes[`ProductName--${page}`])}
+                classes[`ProductName--${subclass}`])}
             >
                 Basic t-shirt
             </span>
@@ -25,7 +25,7 @@ const ProductCard = ({ page }) => (
 );
 
 ProductCard.propTypes = {
-    page: PropTypes.string.isRequired,
+    subclass: PropTypes.string.isRequired,
 };
 
 export { ProductCard };

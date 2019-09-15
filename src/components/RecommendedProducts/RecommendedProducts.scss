@@ -1,5 +1,12 @@
+@import "../../styles/abstracts/breakpoints";
+@import "../../styles/abstracts/mixins";
+
 .RecommendedProducts {
     padding: 20px 0;
+}
+
+.Container {
+    @include container;
 }
 
 .Header {
@@ -33,5 +40,17 @@
         width: 18px;
         height: 1px;
         background: transparent;
+    }
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
     }
 }

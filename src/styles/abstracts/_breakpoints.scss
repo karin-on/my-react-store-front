@@ -1,6 +1,7 @@
 // widths
 $largeMobile: largeMobile;
-$laptop: laptop;
+$tablet: tablet;
+$largeTablet: largeTablet;
 $desktop: desktop;
 $largeDesktop: largeDesktop;
 
@@ -12,16 +13,20 @@ $highMobile: highMobile;
         @media (min-width: 421px) { @content ; }
     }
 
-    @if $point == laptop {
+    @if $point == tablet {
         @media (min-width: 651px) { @content ; }
     }
 
+    @if $point == largeTablet {
+        @media (min-width: 769px) { @content ; }
+    }
+
     @else if $point == desktop {
-        @media (min-width: 1051px) { @content ; }
+        @media (min-width: 1025px) { @content ; }
     }
 
     @else if $point == largeDesktop {
-        @media (min-width: 1601px) { @content ; }
+        @media (min-width: 1701px) { @content ; }
     }
 }
 

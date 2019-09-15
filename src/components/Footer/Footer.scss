@@ -1,5 +1,6 @@
-@import "../../styles/abstracts/variables";
 @import "../../styles/abstracts/breakpoints";
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
 
 .Footer {
     position: absolute;
@@ -12,10 +13,7 @@
 }
 
 .Container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 18px;
+    @include container;
 }
 
 .FooterContainer {
@@ -24,14 +22,14 @@
     align-items: center;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($largeTablet) {
     .Container {
-        padding: 0 30px;
+        @include container-largeTablet;
     }
 }
 
 @include breakpoint($largeDesktop) {
     .Container {
-        padding: 0;
+        @include container-largeDesktop;
     }
 }

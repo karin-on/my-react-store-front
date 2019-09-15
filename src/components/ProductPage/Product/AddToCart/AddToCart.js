@@ -5,7 +5,7 @@ import classes from './AddToCart.scss';
 const AddToCart = () => {
     const heartClasses = classNames(
         'far', 'fa-heart', 'fa-2x',
-        classes.heartIcon,
+        classes.HeartIcon,
     );
 
     return (

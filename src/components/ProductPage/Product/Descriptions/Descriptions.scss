@@ -1,3 +1,4 @@
+@import "../../../../styles/abstracts/breakpoints";
 @import "../../../../styles/abstracts/variables";
 
 .Descriptions {
@@ -20,4 +21,16 @@
     font-size: 11px;
     font-weight: 500;
     line-height: 1.8;
+}
+
+@include breakpoint($largeTablet) {
+    .Descriptions {
+        grid-column: 1 / -1;
+    }
+}
+
+@include breakpoint($desktop) {
+    .Descriptions {
+        grid-column: 2 / -1;
+    }
 }

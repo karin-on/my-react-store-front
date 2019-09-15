@@ -3,3 +3,17 @@
     height: 0;
     padding-bottom: ($height / $width) * 100%;
 }
+
+@mixin container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+@mixin container-largeTablet {
+    padding: 0 30px;
+}
+
+@mixin container-largeDesktop {
+    padding: 0;
+}
