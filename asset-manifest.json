@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-react-store-front/static/css/main.3fd8d0d7.chunk.css",
-    "main.js": "/my-react-store-front/static/js/main.f8d4d729.chunk.js",
-    "main.js.map": "/my-react-store-front/static/js/main.f8d4d729.chunk.js.map",
+    "main.css": "/my-react-store-front/static/css/main.0abd41ac.chunk.css",
+    "main.js": "/my-react-store-front/static/js/main.66281069.chunk.js",
+    "main.js.map": "/my-react-store-front/static/js/main.66281069.chunk.js.map",
     "runtime~main.js": "/my-react-store-front/static/js/runtime~main.474ce230.js",
     "runtime~main.js.map": "/my-react-store-front/static/js/runtime~main.474ce230.js.map",
     "static/css/2.d076884b.chunk.css": "/my-react-store-front/static/css/2.d076884b.chunk.css",
-    "static/js/2.ffea3f01.chunk.js": "/my-react-store-front/static/js/2.ffea3f01.chunk.js",
-    "static/js/2.ffea3f01.chunk.js.map": "/my-react-store-front/static/js/2.ffea3f01.chunk.js.map",
+    "static/js/2.92aa4d94.chunk.js": "/my-react-store-front/static/js/2.92aa4d94.chunk.js",
+    "static/js/2.92aa4d94.chunk.js.map": "/my-react-store-front/static/js/2.92aa4d94.chunk.js.map",
     "index.scss": "/my-react-store-front/d6d8d5da9214dc7d46b297672a602d55.woff2",
     "index.html": "/my-react-store-front/index.html",
-    "precache-manifest.27ebcb49d3a7f6e30d0f25f28421fd38.js": "/my-react-store-front/precache-manifest.27ebcb49d3a7f6e30d0f25f28421fd38.js",
+    "precache-manifest.9006bf34bf6ef63e67e930790105b14a.js": "/my-react-store-front/precache-manifest.9006bf34bf6ef63e67e930790105b14a.js",
     "service-worker.js": "/my-react-store-front/service-worker.js",
     "static/css/2.d076884b.chunk.css.map": "/my-react-store-front/static/css/2.d076884b.chunk.css.map",
-    "static/css/main.3fd8d0d7.chunk.css.map": "/my-react-store-front/static/css/main.3fd8d0d7.chunk.css.map",
+    "static/css/main.0abd41ac.chunk.css.map": "/my-react-store-front/static/css/main.0abd41ac.chunk.css.map",
     "static/media/index.scss": "/my-react-store-front/static/media/fa-solid-900.896e20e2.ttf"
   }
 }
