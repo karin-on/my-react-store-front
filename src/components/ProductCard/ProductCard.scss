@@ -6,8 +6,13 @@
 @import "../../styles/abstracts/mixins";
 @import "../../styles/abstracts/variables";
 
-.Product {
+.Card {
     position: relative;
+}
+
+.CardLink {
+    color: inherit;
+    text-decoration: none;
 }
 
 .AddToFavIcon {
@@ -18,36 +23,36 @@
     font-size: 12px;
 }
 
-.ProductImageHolder {
+.ImageHolder {
     @include image-holder(165, 205);
 
     background-color: $color-gray-bg;
 }
 
-.ProductInfo--ProdList {
+.Info--ProdList {
     padding: 10px 0;
     font-size: 14px;
 }
 
-.ProductInfo--ProdPage {
+.Info--ProdPage {
     padding: 6px 0;
     font-size: 11px;
 }
 
-.ProductName {
+.Name {
     display: block;
     font-weight: 500;
 }
 
-.ProductName--ProdList {
+.Name--ProdList {
     margin-bottom: 3px;
 }
 
-.ProductName--ProdPage {
+.Name--ProdPage {
     margin-bottom: 1px;
 }
 
-.ProductPrice {
+.Price {
     display: block;
     font-weight: 600;
 }

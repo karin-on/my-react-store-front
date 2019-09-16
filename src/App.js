@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { Layout } from './components/Layout/Layout';
 import { Home } from './components/Home/Home';
@@ -11,9 +11,11 @@ function App() {
     return (
         <BrowserRouter basename="/my-react-store-front">
             <Layout>
-                <Route exact path="/" component={Home} />
-                <Route path="/products" component={ProductListing} />
-                <Route path="/product" component={ProductPage} />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/products" component={ProductListing} />
+                    <Route path="/product" component={ProductPage} />
+                </Switch>
             </Layout>
         </BrowserRouter>
     );
