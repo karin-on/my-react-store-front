@@ -45,9 +45,9 @@ const Header = () => {
                 <button className={userBtnClasses} type="button">
                     <i className="far fa-user fa-lg" aria-hidden="true" />
                 </button>
-                <button className={cartBtnClasses} type="button">
+                <Link className={cartBtnClasses} to="/cart">
                     <i className="fa fa-shopping-bag fa-lg" aria-hidden="true" />
-                </button>
+                </Link>
             </div>
         </header>
     );

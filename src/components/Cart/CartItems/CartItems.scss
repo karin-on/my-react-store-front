@@ -1,0 +1,9 @@
+@import "../../../styles/abstracts/mixins";
+
+.Container {
+    @include container;
+}
+
+.CartItems {
+    list-style: none;
+}

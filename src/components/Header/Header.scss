@@ -71,7 +71,7 @@
     margin-left: 3px;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($tablet) {
     .Container {
         padding: 0 30px;
     }

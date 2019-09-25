@@ -1,13 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classes from './PageHeader.scss';
 
-const PageHeader = () => (
+const PageHeader = ({ mainHeaderTxt, children }) => (
     <div className={classes.Header}>
-        <h2 className={classes.MainHeader}>T-shirts</h2>
-        <h6 className={classes.Subheader}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, possimus?
-        </h6>
+        <h2 className={classes.MainHeader}>{mainHeaderTxt}</h2>
+        {children}
     </div>
 );
+
+PageHeader.propTypes = {
+    mainHeaderTxt: PropTypes.string.isRequired,
+    children: PropTypes.element,
+};
+
+PageHeader.defaultProps = {
+    children: null,
+};
 
 export { PageHeader };

@@ -57,7 +57,7 @@
     font-weight: 500;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($tablet) {
     .Container {
         padding: 0 30px;
     }

@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($tablet) {
     .Container {
         padding: 0 30px;
     }

@@ -1,0 +1,38 @@
+:global {
+    @import "@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "@fortawesome/fontawesome-free/scss/regular";
+}
+
+@import "../../../../styles/abstracts/mixins";
+@import "../../../../styles/abstracts/variables";
+
+.CartItem {
+    display: grid;
+    grid-template-columns: 23.5% auto 18px;
+    grid-gap: 0 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-gray-bg;
+    margin-bottom: 20px;
+}
+
+.ProductImage {
+    width: 23.5%;
+}
+
+.ImageHolder {
+    @include image-holder(79, 99);
+
+    background-color: $color-gray-bg;
+}
+
+.Name {
+    display: block;
+}
+
+.Price {
+    display: block;
+}
+
+.Trash {
+    align-self: self-end;
+}
