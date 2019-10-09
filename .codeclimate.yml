@@ -1,6 +1,6 @@
 plugins:
   eslint:
-    enabled: true,
+    enabled: true
     config:
       config: ./.eslintrc.json
     checks:
