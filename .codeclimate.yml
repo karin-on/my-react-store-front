@@ -6,3 +6,9 @@ plugins:
     checks:
       complexity:
         enabled: false
+exclude_patterns:
+  - "build/"
+  - "config/"
+  - "node_modules/"
+  - "public/"
+  - "scripts/"
