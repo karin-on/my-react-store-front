@@ -1,10 +1,5 @@
-:global {
-    @import "@fortawesome/fontawesome-free/scss/fontawesome";
-    @import "@fortawesome/fontawesome-free/scss/regular";
-}
-
-@import "../../../../styles/abstracts/breakpoints";
-@import "../../../../styles/abstracts/variables";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/variables";
 
 .AddToCart {
     display: grid;

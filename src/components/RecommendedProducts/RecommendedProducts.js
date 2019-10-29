@@ -3,8 +3,6 @@ import classes from './RecommendedProducts.scss';
 
 import { ProductCard } from '../ProductCard/ProductCard';
 
-const prodCardSubclass = 'ProdPage';
-
 const RecommendedProducts = () => (
     <section className={classes.RecommendedProducts}>
         <div className={classes.Container}>
@@ -12,7 +10,7 @@ const RecommendedProducts = () => (
             <ul className={classes.ProductList}>
                 {[...Array(10).keys()].map((i) => (
                     <li className={classes.ListItem} key={i}>
-                        <ProductCard subclass={prodCardSubclass} />
+                        <ProductCard parentComponent="RecommendedProducts" />
                     </li>
                 ))}
             </ul>

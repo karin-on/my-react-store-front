@@ -1,6 +1,6 @@
-@import "../../../../styles/abstracts/breakpoints";
-@import "../../../../styles/abstracts/mixins";
-@import "../../../../styles/abstracts/variables";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .ImagesContainer {
     width: calc(100% + 2 * 18px);

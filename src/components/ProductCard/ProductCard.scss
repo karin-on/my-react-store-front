@@ -1,10 +1,5 @@
-:global {
-    @import "@fortawesome/fontawesome-free/scss/fontawesome";
-    @import "@fortawesome/fontawesome-free/scss/regular";
-}
-
-@import "../../styles/abstracts/mixins";
-@import "../../styles/abstracts/variables";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .Card {
     position: relative;

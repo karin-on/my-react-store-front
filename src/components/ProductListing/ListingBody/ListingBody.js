@@ -3,8 +3,6 @@ import classes from './ListingBody.scss';
 
 import { ProductCard } from '../../ProductCard/ProductCard';
 
-const prodCardSubclass = 'ProdList';
-
 const ListingBody = () => (
     <>
         <div className={classes.ListingBody}>
@@ -12,7 +10,7 @@ const ListingBody = () => (
                 <ul className={classes.ProductsList}>
                     {[...Array(10).keys()].map((i) => (
                         <li key={i}>
-                            <ProductCard subclass={prodCardSubclass} />
+                            <ProductCard parentComponent="ListingBody" />
                         </li>
                     ))}
                 </ul>
