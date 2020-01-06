@@ -1,0 +1,41 @@
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
+
+.Container {
+    @include container;
+}
+
+.ProdContainer {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+
+    .ProdContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: $product-gridGap-largeTablet;
+    }
+}
+
+@include breakpoint($desktop) {
+    .ProdContainer {
+        grid-template-columns: 465px auto;
+        grid-column-gap: 40px;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
+
+    .ProdContainer {
+        grid-template-columns: 600px auto;
+    }
+}

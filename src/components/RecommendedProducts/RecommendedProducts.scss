@@ -1,0 +1,56 @@
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+
+.RecommendedProducts {
+    padding: 20px 0;
+}
+
+.Container {
+    @include container;
+}
+
+.Header {
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ProductList {
+    display: flex;
+    width: calc(100% + 2 * 18px);
+    padding: 0 0 10px 18px;
+    margin-left: -18px;
+    list-style: none;
+    overflow-x: auto;
+}
+
+.ListItem {
+    position: relative;
+    min-width: 140px;
+    margin-right: 12px;
+
+    &:last-child::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: -18px;
+        width: 18px;
+        height: 1px;
+        background: transparent;
+    }
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
+}

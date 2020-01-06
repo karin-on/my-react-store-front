@@ -1,5 +1,12 @@
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+
 .Header {
     margin-bottom: 20px;
+}
+
+.Container {
+    @include container;
 }
 
 .MainHeader {
@@ -13,4 +20,16 @@
     font-size: 12px;
     line-height: 1.4;
     font-weight: 500;
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
 }

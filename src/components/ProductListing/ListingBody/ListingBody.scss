@@ -1,8 +1,13 @@
-@import "../../../styles/abstracts/mixins";
-@import "../../../styles/abstracts/variables";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
-.ProductsContainer {
+.ListingBody {
     margin-bottom: 30px;
+}
+
+.Container {
+    @include container;
 }
 
 .ProductsList {
@@ -12,38 +17,8 @@
     list-style: none;
 }
 
-.Product {
-    position: relative;
-}
-
-.AddToFavIcon {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    z-index: 1;
-    font-size: 12px;
-}
-
-.ProductImageHolder {
-    @include image-holder(165, 205);
-
-    background-color: $color-gray-bg;
-}
-
-.ProductInfo {
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-.ProductName {
-    display: block;
-    margin-bottom: 3px;
-    font-weight: 500;
-}
-
-.ProductPrice {
-    display: block;
-    font-weight: 600;
+.LoadMore {
+    margin-bottom: 40px;
 }
 
 .LoadMoreBtn {
@@ -57,6 +32,25 @@
     text-transform: uppercase;
 }
 
-.LoadMoreContainer {
-    margin-bottom: 40px;
+@include breakpoint($tablet) {
+    .ProductsList {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+
+    .ProductsList {
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
 }

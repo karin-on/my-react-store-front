@@ -1,20 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { Layout } from './components/Layout/Layout';
 import { Home } from './components/Home/Home';
 import { ProductListing } from './components/ProductListing/ProductListing';
+import { ProductPage } from './components/ProductPage/ProductPage';
 
 function App() {
     return (
         <BrowserRouter basename="/my-react-store-front">
-            <>
-                <Layout>
+            <Layout>
+                <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/products" component={ProductListing} />
-                </Layout>
-            </>
+                    <Route path="/product" component={ProductPage} />
+                </Switch>
+            </Layout>
         </BrowserRouter>
     );
 }

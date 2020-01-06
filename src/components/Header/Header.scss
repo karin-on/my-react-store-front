@@ -1,10 +1,6 @@
-:global {
-    @import "@fortawesome/fontawesome-free/scss/fontawesome";
-    @import "@fortawesome/fontawesome-free/scss/regular";
-}
-
-@import "../../styles/abstracts/variables";
-@import "../../styles/abstracts/breakpoints";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .Header {
     position: fixed;
@@ -18,10 +14,7 @@
 }
 
 .Container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 18px;
+    @include container;
 }
 
 .HeaderContainer {
@@ -71,14 +64,14 @@
     margin-left: 3px;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($largeTablet) {
     .Container {
-        padding: 0 30px;
+        @include container-largeTablet;
     }
 }
 
 @include breakpoint($largeDesktop) {
     .Container {
-        padding: 0;
+        @include container-largeDesktop;
     }
 }

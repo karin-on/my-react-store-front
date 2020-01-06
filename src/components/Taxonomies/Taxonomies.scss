@@ -1,5 +1,6 @@
-@import "../../styles/abstracts/variables";
-@import "../../styles/abstracts/breakpoints";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .Taxonomies {
     padding: 13px 0;
@@ -7,10 +8,9 @@
 }
 
 .Container {
+    @include container;
+
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 18px;
 }
 
 .TaxContainer {
@@ -57,14 +57,14 @@
     font-weight: 500;
 }
 
-@include breakpoint($laptop) {
+@include breakpoint($largeTablet) {
     .Container {
-        padding: 0 30px;
+        @include container-largeTablet;
     }
 }
 
 @include breakpoint($largeDesktop) {
     .Container {
-        padding: 0;
+        @include container-largeDesktop;
     }
 }

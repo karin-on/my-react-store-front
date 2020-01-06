@@ -1,0 +1,15 @@
+plugins:
+  eslint:
+    enabled: true
+    channel: eslint-6
+    config:
+      config: ./.eslintrc.json
+    checks:
+      complexity:
+        enabled: false
+exclude_patterns:
+  - "build/"
+  - "config/"
+  - "node_modules/"
+  - "public/"
+  - "scripts/"

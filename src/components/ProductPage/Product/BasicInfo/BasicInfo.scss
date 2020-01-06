@@ -1,0 +1,37 @@
+@import "src/styles/abstracts/variables";
+
+.BasicInfo {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-gray-bg;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.Subtitle {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.Price {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.Availability {
+    display: block;
+    font-size: 11px;
+}
+
+.AvailabilityStatus {
+    margin-left: 3px;
+    color: $color-blue-logo;
+}

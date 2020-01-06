@@ -1,0 +1,36 @@
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
+
+.ImagesContainer {
+    width: calc(100% + 2 * 18px);
+    margin-left: -18px;
+}
+
+.ImageHolder {
+    @include image-holder(375, 405);
+
+    background-color: $color-gray-bg;
+}
+
+@include breakpoint($largeMobile) {
+    .ImagesContainer {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@include breakpoint($largeTablet) {
+    .ImagesContainer {
+        grid-row: 1 / span 2;
+        max-width: unset;
+        margin: unset;
+    }
+}
+
+@include breakpoint($desktop) {
+    .ImagesContainer {
+        grid-row: 1 / span 3;
+    }
+}

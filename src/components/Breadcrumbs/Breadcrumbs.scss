@@ -1,9 +1,15 @@
-@import "../../styles/abstracts/variables";
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .Breadcrumbs {
     padding: 12px 0;
     color: $color-gray-breadcrumbs-font;
     font-size: 10px;
+}
+
+.Container {
+    @include container;
 }
 
 .Link {
@@ -18,4 +24,16 @@
 
 .Breadcrumbs i {
     margin-right: 8px;
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
 }

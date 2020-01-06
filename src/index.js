@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import 'normalize-css/normalize.css';
+import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+import '@fortawesome/fontawesome-free/scss/solid.scss';
+import '@fortawesome/fontawesome-free/scss/regular.scss';
 import './index.scss';
-// import '../node_modules/font-awesome/scss/font-awesome.scss';
-// import 'font-awesome/scss/font-awesome.scss';
 import * as serviceWorker from './serviceWorker';
 
-import cart from './reducers/cart';
+import cart from './store/reducers/cart';
 import App from './App';
 
 

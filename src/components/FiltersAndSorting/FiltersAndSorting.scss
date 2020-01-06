@@ -1,12 +1,18 @@
-:global {
-    @import "@fortawesome/fontawesome-free/scss/fontawesome";
-    @import "@fortawesome/fontawesome-free/scss/solid";
-}
+@import "src/styles/abstracts/breakpoints";
+@import "src/styles/abstracts/mixins";
+@import "src/styles/abstracts/variables";
 
 .FiltersAndSorting {
+    margin-bottom: 10px;
+}
+
+.Container {
+    @include container;
+}
+
+.FiltAndSortContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
 }
 
 .Button {
@@ -21,8 +27,22 @@
 
 .SlidersIcon {
     margin-right: 12px;
+    color: $color-gray-icon;
 }
 
 .AngleIcon {
     margin-left: 10px;
+    color: $color-gray-icon;
+}
+
+@include breakpoint($largeTablet) {
+    .Container {
+        @include container-largeTablet;
+    }
+}
+
+@include breakpoint($largeDesktop) {
+    .Container {
+        @include container-largeDesktop;
+    }
 }

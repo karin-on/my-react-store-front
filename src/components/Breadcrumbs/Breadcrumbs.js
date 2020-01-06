@@ -5,9 +5,11 @@ import classes from './Breadcrumbs.scss';
 
 const Breadcrumbs = () => (
     <div className={classes.Breadcrumbs}>
-        <Link to="/" className={classes.Link}>Home</Link>
-        <i className="fa fa-angle-right" aria-hidden="true" />
-        <span>T-shirts</span>
+        <div className={classes.Container}>
+            <Link to="/" className={classes.Link}>Home</Link>
+            <i className="fa fa-angle-right" aria-hidden="true" />
+            <span>T-shirts</span>
+        </div>
     </div>
 );
 

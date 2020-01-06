@@ -80,6 +80,7 @@
         "react/jsx-indent-props": [
             "error",
             4
-        ]
+        ],
+        "arrow-parens": 0
     }
 }
